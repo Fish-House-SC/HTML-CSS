@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupping tags</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(43 49 49);
+            
+        
+        }
+
+        header{
+            background-color: #dcebeb;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        nav{
+            background-color: #aec2c2;
+            padding: 2px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 5px -1px 9px 1px black;
+
+
+        
+        }
+        nav > a {
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: aliceblue;
+            
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            font-size: large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style:italic;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+        main{
+            background-color: #dcebeb;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 42px 33px;
+            box-shadow: -7px 2px 13px 4px black;
+        }
+        article{
+            background-color: aliceblue;
+            padding: 10px;
+        }
+
+        article > aside{
+            background-color: aqua;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+   
+    <main>
+        <h3>principal</h3>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias Sobre Fish</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos, dolorem nihil soluta, eius ipsam, cum ullam vitae animi laudantium quisquam error voluptatum beatae? Architecto distinctio amet ex ipsam vitae.</p>
+                <aside>
+                    <p>artigo escreti por...</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>rodapé</h3>
+        <p>produzido por Fish House</p>
+        
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
