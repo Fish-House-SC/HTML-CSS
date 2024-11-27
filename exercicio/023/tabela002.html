@@ -10,54 +10,116 @@
         }
 
         table{
-            width: 400px;
-            height: 400px;
+            width: 500px;
+            
             border-collapse: collapse;
 
         }
 
-        td{
+        td,th{
             border: 1px solid black;
             padding: 9px;
-            text-align: left;
+            
             vertical-align: top;
+        }
+        caption{
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+
+        }
+
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+        td.num{
+            text-align: right;
         }
 
     </style>
 </head>
 <body>
-    <h1>Minha tabela</h1>
+    <h1>Uso de tabelas grandes</h1>
 
     <!--
-    HIERARQUIA DE TABELAS (SIMPLES)
-    TABLE = tabela
-           TABLE ROW = linha de tabela
-              TABLE HEADER = cabeçario de tabela 
-              TABLE DATA = dado de tabela
+    ANATOMIA PARA TABELAS GRANDES 
+    TABLE
+        THEAD
+            TR,TD,TH
+        TBODY
+            TR,TD,TH
+        TFOOT
+            TR,TD,TH
     -->
-    <table>
-        <tr> <!--primeira linha-->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
-        <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
+     <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Polulação</th>
 
-        </tr>
+            </tr>
 
-    </table>
+        </thead>
+
+
+        <tbody>
+
+        </tbody>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 058 447</td>
+            </tr>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td>0000000</td>
+
+            </tr>
+
+        </tfoot>
+
+
+     </table>       
+  
 </body>
 </html>
