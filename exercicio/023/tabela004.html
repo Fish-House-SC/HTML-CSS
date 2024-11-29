@@ -11,9 +11,11 @@
         }
 
         table{
+            
             position: relative;
             border-collapse: separate;
-            width: 300px;
+            width: 600px;
+            height: 600px;
             
         }
         td{
@@ -21,10 +23,23 @@
             padding: 10px;
             text-align: center;
         }
+        
         table.class2 tr{
+            
             background-color: aqua;
             padding-top: 60px;
         }
+        table.filme th{
+            background-color: lightblue;
+        }
+            table.filme tr td {
+
+                border-collapse: collapse;
+                border: 2px dotted blue;
+            }
+            table.filme thead{
+                background-color: aqua;
+            }
     </style>
 </head>
 <body>
@@ -86,6 +101,66 @@
             
             
         </tr>
+    </table>
+
+    <table class="filme">
+        <caption>filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cládia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Emnnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Mendonça</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Drive</td>
+                <td>Toy Story</td>
+            </tr>
+
+       
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><button><a href="tabela005.html" target="_blank">Netxs</a></button></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
