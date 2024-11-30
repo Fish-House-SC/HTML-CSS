@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabela</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead{
+            background-color: lightgray;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            border: 1px solid black;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px 50px;
+            text-align: center;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+
+        
+        }
+        tr.cabeça {
+            background-color: lightgray;
+        }
+        div#conter{
+            overflow: auto;
+        }
+        </style>
+</head>
+<body>
+    <h1>Tabala responsiva </h1>
+    <p>tambem tem a tabela responsiva nesse exercico</p>
+    <div id="conter">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="row">Area</th>
+                    <th rowspan="2" scope="row">Disciplina</th>
+                    <th colspan="2" scope="rowgroup">Notas</th>
+                    <th rowspan="2" scope="row">Medias</th>
+                </tr>
+                <tr>
+                    <th scope="row">Nota 01</th>
+                    <th scope="row">Nota 02</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="colgroup">Exatas</th>
+                    <td>Matemática</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td scope="col">Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td scope="col">Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td scope="col">Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr class="cabeça">
+                    <th colspan="4">Média de Exatas</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="colgroup">Humanas</th>
+                    <td>História</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td scope="col">Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr class="cabeça">
+                    <th colspan="4" scope="col">Média de Humanas</th>
+                    <td> <button><a href="tabela006.html" target="_blank">0.0</a></button>0.0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
+    
+</body>
+</html>
