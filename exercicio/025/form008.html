@@ -8,8 +8,8 @@
         div{
             padding: 10px;
             & input{
-                width: 500px;
-                height: 50px;
+                width: 250px;
+                height: 20px;
             }
             & label{
                 font-size: 20px;
@@ -19,20 +19,21 @@
 </head>
 <body>
     <form action="cadastro." method="post">
-      <div>
-        <label for="inome">Nome</label>
-        <input type="text" name="nome" id="inome" required minlength="3" autocomplete="name">
-      </div>
-      
-      <div>
-        <label for="inamorado">Nome do seu namorado</label>
-        <input type="text" name="namora" id="inamora" required minlength="3" placeholder="Seu namorado aqui">
-      </div>
-
-      <div>
-        <label for="idata">Inicio do namoro</label>
-        <input type="date" name="data" id="idata" required > 
-      </div>
+      <fieldset>
+          <div>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required minlength="3" autocomplete="name">
+          </div>
+          
+          <div>
+            <label for="inamorado">Nome do seu namorado</label>
+            <input type="text" name="namora" id="inamora" required minlength="3" placeholder="Seu namorado aqui">
+          </div>
+          <div>
+            <label for="idata">Inicio do namoro</label>
+            <input type="date" name="data" id="idata" required >
+          </div>
+      </fieldset>
 
     </form>
     
