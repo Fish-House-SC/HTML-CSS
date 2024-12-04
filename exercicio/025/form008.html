@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Relacionamento</title>
+    <style>
+        div{
+            padding: 10px;
+            & input{
+                width: 500px;
+                height: 50px;
+            }
+            & label{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+      <div>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required minlength="3" autocomplete="name">
+      </div>
+      
+      <div>
+        <label for="inamorado">Nome do seu namorado</label>
+        <input type="text" name="namora" id="inamora" required minlength="3" placeholder="Seu namorado aqui">
+      </div>
+
+      <div>
+        <label for="idata">Inicio do namoro</label>
+        <input type="date" name="data" id="idata" required > 
+      </div>
+
+    </form>
+    
+</body>
+</html>
