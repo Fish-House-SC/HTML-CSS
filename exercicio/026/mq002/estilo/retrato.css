@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* aparelho em pé */
+body{
+    background-color: blueviolet;
+    background: url(../img/cev-portrait.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
