@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Florianopolis</h1>
+        <div class="menu-hamburguer" id="burguer" onclick="clickMenu()">
+            &#9776; <!-- Ícone de hambúrguer -->
+          </div>
+        <menu id="itens">
+        
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+
+        </menu>
+
+    </header>
+
+    <main>
+        <article>
+            <h2>O Surgimento do Estreito</h2>
+            <p>O bairro do Estreito começou a se desenvolver ainda no século XIX, em parte devido à sua localização estratégica, bem em frente à ilha de Florianópolis. Seu nome vem da geografia da região: o canal estreito que separa o continente da ilha. A construção da Ponte Hercílio Luz, inaugurada em 1926, solidificou o papel do bairro como um ponto de ligação essencial entre o continente e a ilha.</p>
+            <p>No início, o Estreito era habitado por famílias de pescadores e pequenos comerciantes. À medida que Florianópolis crescia, o bairro foi se tornando um polo comercial e residencial, atraindo novos moradores e negócios.</p>
+            <h3>O Estreito Moderno</h3>
+            
+
+            <p>Hoje, o Estreito é um dos bairros mais dinâmicos da parte continental de Florianópolis. Ele se destaca por sua infraestrutura completa, com escolas, hospitais, mercados e uma grande diversidade de comércios e serviços. É uma região onde convivem construções antigas e modernas, refletindo a transição do bairro ao longo das décadas.</p>
+
+            <p>O Estreito também é famoso por sua vista privilegiada para a Baía Sul e a Ponte Hercílio Luz, que se ilumina à noite, criando uma paisagem que atrai moradores e turistas. Além disso, o bairro é palco de eventos culturais e esportivos, como o desfile de escolas de samba e competições locais.</p>
+
+        </article>
+
+    </main>
+    <script>
+        function clickMenu(){
+           if(itens.style.display == 'block') {
+               itens.style.display = 'none'
+        } else{
+            itens.style.display = 'block'
+            
+        }
+        }
+
+    </script>
+    
+</body>
+</html>
