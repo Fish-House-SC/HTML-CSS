@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/midia.css">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Florianopolis</h1>
         <div class="menu-hamburguer" id="burguer" onclick="clickMenu()">
@@ -42,6 +43,14 @@
 
     </main>
     <script>
+
+        function mudouTamanho(){
+            if(window.innerWidth >=768){
+            itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu(){
            if(itens.style.display == 'block') {
                itens.style.display = 'none'
