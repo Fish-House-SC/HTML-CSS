@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box centralizando objetos</title>
+
+    <style>
+        div.conteiner{
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: stretch;
+           
+            align-content: space-between;
+            height: 600px;
+
+           
+            
+        }
+        div.item{
+           
+            background-color: rgb(255, 0, 0);
+            border: 3px solid rgb(0, 255, 221);
+            color: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 20px;
+           
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="item"> Centro</div>
+        <div class="item"> Centro</div>
+        <div class="item"> Centro</div>
+        <div class="item"> Centro</div>
+        <div class="item"> Centro</div>
+        <div class="item"> Centro</div>
+        <div class="item"> Centro</div>
+        <div class="item"> Centro</div>
+        
+    </div>
+    
+    
+</body>
+</html>
