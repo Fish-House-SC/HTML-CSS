@@ -6,28 +6,72 @@
     box-sizing: border-box;
     
 }
+div#burguer{
+    display: none;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: lightgray;
+    background-image: linear-gradient(to top, #490104,#ac3100);
     height: 100vh;
     width: 100vw;
 }
 header{
-    background-color: gray;
-    color: white;
+    background-color: #ac3100;
+    color: black;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header > h1{
-    border: 1px dotted black;
+    /* border: 1px dotted black;*/
+    flex: 0 0 200px;
 }
-header > nav{
-    border: 1px dotted black;
+header > menu#itens {
+   /* border: 1px dotted black; */ 
+      
+}
+header > menu > ul > li > a {
+    background-color: #490104;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+header > menu > ul > li> a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 1.5s;
+}
+div{
+    display: flex;
+    justify-content: center;
+    /*border: 2px dotted black;*/
 }
 main{
+    align-self: center;
     background-color: white;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     box-shadow:  2px 2px 3px black;
+   
+    flex-basis: 800px;
+    
+    
+}
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    list-style-type: none;
+    
+}
+li{
+    display: flex;
+    
 }
